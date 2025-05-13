@@ -4694,16 +4694,31 @@ input, select, textarea {
   width: 100%;
 }
 
-.image.fit img {
-  height: 1080px;  /* Adjust as needed */
-  object-fit: cover;
-  width: 100%;
+/* Ensure each row of posts is displayed as flex */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
+/* Make all articles in .posts the same height */
 .posts article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  flex: 1 1 calc(50% - 2rem); /* Two per row with gap */
+  box-sizing: border-box;
 }
 
+/* Let images scale nicely without stretching */
+.image.fit img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Optional: constrain image height */
+.image.fit {
+  max-height: 250px;
+  overflow: hidden;
+}
