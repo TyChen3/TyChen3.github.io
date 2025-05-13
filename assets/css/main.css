@@ -4689,23 +4689,46 @@ input, select, textarea {
 	}
 
 
-/* Add these styles to center the title */
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center;     /* Centers the content vertically */
-    height: 100vh;           /* Ensure the body takes the full viewport height */
-    background-color: #f4f4f4;  /* Optional: Background color */
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Center content horizontally */
+    height: 100vh;           /* Make sure the body takes full height */
+    background-color: #f4f4f4;
 }
 
-/* Title Styles */
-h1 {
-    font-size: 3em;  /* Adjust size of your title */
-    font-weight: bold;
-    text-align: center; /* Centers text within the h1 element */
-    margin: 0;
-    color: #333; /* Title color */
+/* Title Section */
+header {
+    width: 100%;  /* Full width */
+    text-align: center;
+    margin-top: 50px;  /* Space from the top */
 }
+
+h1 {
+    font-size: 3em;  /* Adjust title size */
+    font-weight: bold;
+    color: #333;  /* Title color */
+}
+
+/* Main Content Section (Posts) */
+.content {
+    display: flex;           /* Align the posts side by side */
+    justify-content: center; /* Center the posts horizontally */
+    gap: 20px;               /* Space between the posts */
+    margin-top: 30px;        /* Space below the title */
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;  /* Adjust the width of each post */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
