@@ -4718,16 +4718,5 @@ input, select, textarea {
   object-fit: cover; /* Ensure images cover the set height without distortion */
 }
 
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.row {
-  display: flex;
-  align-items: stretch;
-}
-
 
 
