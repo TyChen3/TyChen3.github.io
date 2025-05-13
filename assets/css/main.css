@@ -4691,19 +4691,23 @@ input, select, textarea {
 
 .posts {
   text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
 }
 
 .posts .major {
   margin-bottom: 2em;
 }
 
-.post-row {
+.post-grid {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap; /* allows stacking on smaller screens */
+  flex-wrap: wrap;
 }
 
-.post-row article {
-  width: 300px; /* or whatever width fits your style */
+.post-grid article {
+  width: 300px;
+  flex: 1 1 300px;
 }
