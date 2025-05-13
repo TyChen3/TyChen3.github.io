@@ -4689,25 +4689,23 @@ input, select, textarea {
 	}
 
 
-.posts {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 1rem;
+/* Add these styles to center the title */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically */
+    height: 100vh;           /* Ensure the body takes the full viewport height */
+    background-color: #f4f4f4;  /* Optional: Background color */
 }
 
-.posts .major {
-  margin-bottom: 2em;
-}
-
-.post-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.post-grid article {
-  width: 300px;
-  flex: 1 1 300px;
+/* Title Styles */
+h1 {
+    font-size: 3em;  /* Adjust size of your title */
+    font-weight: bold;
+    text-align: center; /* Centers text within the h1 element */
+    margin: 0;
+    color: #333; /* Title color */
 }
