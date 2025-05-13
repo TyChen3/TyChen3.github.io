@@ -4694,6 +4694,12 @@ input, select, textarea {
   width: 100%;
 }
 
+.image.fit img {
+  height: 1080px;  /* Adjust as needed */
+  object-fit: cover;
+  width: 100%;
+}
+
 .posts article {
   display: flex;
   flex-direction: column;
