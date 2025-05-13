@@ -4698,7 +4698,7 @@ input, select, textarea {
 .posts {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* Adjust spacing between posts as needed */
+  gap: 4rem; /* Adjust spacing between posts as needed */
 }
 
 /* Style each article within the posts */
@@ -4714,7 +4714,7 @@ input, select, textarea {
 /* Style the images within each post */
 .image.fit img {
   width: 100%;
-  height: 250px; /* Set a consistent image height */
+  height: 300px; /* Set a consistent image height */
   object-fit: cover; /* Ensure images cover the set height without distortion */
 }
 
