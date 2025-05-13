@@ -4694,29 +4694,7 @@ input, select, textarea {
   width: 100%;
 }
 
-/* Ensure the posts container uses Flexbox */
-.posts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; /* Adjust spacing between posts as needed */
-}
 
-/* Style each article within the posts */
-.posts article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1 1 calc(50% - 1rem); /* Two posts per row with spacing */
-  box-sizing: border-box;
-  min-height: 600px; /* Set a minimum height for uniformity */
-}
-
-/* Style the images within each post */
-.image.fit img {
-  width: 100%;
-  height: 250px; /* Set a consistent image height */
-  object-fit: cover; /* Ensure images cover the set height without distortion */
-}
 
 
 
