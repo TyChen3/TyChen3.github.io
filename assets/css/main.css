@@ -4764,3 +4764,50 @@ input, select, textarea {
         font-size: 1rem;
     }
 }
+
+/* ========================================= */
+/* Global Dark Theme Override                */
+/* ========================================= */
+
+/* 1. Change the main container background to a deep charcoal */
+#main {
+    background-color: #1a1f24 !important;
+}
+
+/* 2. Update general text colors to a soft, readable light grey */
+body, input, select, textarea, p, li, #main p {
+    color: #c0c6cc !important;
+}
+
+/* 3. Make all headings and bold text crisp white */
+h1, h2, h3, h4, h5, h6, strong, b, label {
+    color: #ffffff !important;
+}
+
+/* 4. Ensure standard links are visible and keep the cyan hover effect */
+a {
+    color: #c0c6cc;
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+a:hover {
+    color: #18bfef !important;
+    border-bottom-color: transparent !important;
+}
+
+/* 5. Darken the dividing borders so they aren't blindingly bright */
+#main > *, 
+header.major, 
+#main > .posts > article,
+hr {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 6. Fix the pagination buttons at the bottom (if you ever use them) */
+.pagination a, .pagination span {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: #c0c6cc !important;
+}
+.pagination a:hover {
+    border-color: #18bfef !important;
+    color: #18bfef !important;
+}
