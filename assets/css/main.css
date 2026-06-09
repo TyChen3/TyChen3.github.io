@@ -4765,4 +4765,32 @@ input, select, textarea {
     }
 }
 
+/* ========================================= */
+/* Portfolio Filter Grid Override            */
+/* ========================================= */
 
+/* Remove the rigid borders that break when items are hidden */
+#portfolio-grid > article {
+    border: none !important; 
+    margin: 1rem;
+    box-shadow: 0 0 0 2px #eeeeee; /* Replaces borders with a clean box outline */
+    width: calc(50% - 2rem) !important;
+}
+
+/* Make featured items take up the full width of the grid */
+#portfolio-grid > article.featured-item {
+    width: calc(100% - 2rem) !important;
+}
+
+/* Mobile responsiveness for the new boxes */
+@media screen and (max-width: 736px) {
+    #portfolio-grid > article {
+        width: calc(100% - 2rem) !important;
+    }
+}
+
+/* Smooth fade-in animation for when buttons are clicked */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+}
